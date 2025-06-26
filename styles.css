@@ -1,0 +1,55 @@
+/* General reset and body styling */
+body, html {
+  margin: 0; padding: 0; overflow: hidden;
+  height: 100vh; background: #222;
+  display: flex; flex-direction: column; align-items: center;
+  color: white; font-family: Arial, sans-serif;
+}
+
+/* Heading style */
+h1 {
+  margin: 15px 0 5px 0;
+  font-weight: bold;
+  font-size: 2.5rem;
+  user-select: none;
+}
+
+/* Reset button */
+#reset-btn {
+  margin: 10px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background: #ff4081;
+  color: white;
+  transition: background 0.3s ease;
+}
+#reset-btn:hover {
+  background: #e040fb;
+}
+
+/* Counter text */
+#counter {
+  font-size: 24px;
+  user-select: none;
+}
+
+/* Bubble container */
+#bubble-container {
+  position: relative;
+  flex: 1;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* Bubble styles */
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.7;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.15s ease-out;
+}
